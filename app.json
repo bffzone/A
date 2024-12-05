@@ -1,7 +1,7 @@
 {
-    "name": "YukkiMusic",
+    "name": "UmikoMusic",
     "description": "Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls. Supporting platforms like Youtube, Spotify, Resso, AppleMusic, Soundcloud and M3u8 Links.",
-    "logo": "https://graph.org/file/c0e014ff34f34d1056627.png",
+    "logo": "https://envs.sh/IAC.jpg",
     "keywords": [
     "python3",
     "telegram",
@@ -16,17 +16,17 @@
     "env": {
       "API_ID": {
         "description": "Get this value from https://my.telegram.org",
-        "value": "",
+        "value": "21911172",
         "required": true
       },
       "API_HASH": {
         "description": "Get this value from https://my.telegram.org",
-        "value": "",
+        "value": "22fee9fa813e7254521310ae5fe000d2",
         "required": true
       },
       "BOT_TOKEN": {
         "description": "A Bot's token Get it from Botfather",
-        "value": "",
+        "value": "5799143538:AAEBrSH7-ddDS2JrjnIajq9aVtfcHF6SxRw",
         "required": true
       },
       "EXTRA_PLUGINS": {
@@ -36,22 +36,22 @@
       },
       "MONGO_DB_URI": {
         "description": "Get a mongodb url from https://cloud.mongodb.com . You can leave it blank if you want , bot will use Yukki's database for you.",
-        "value": "",
+        "value": "mongodb+srv://ghoda:loda@cluster0.fgrpret.mongodb.net/?retryWrites=true&w=majority",
         "required": false
       },
       "OWNER_ID": {
         "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
-        "value": "",
+        "value": "6751954799",
         "required": true
       },
       "STRING_SESSIONS": {
         "description": "A Pyrogram String Session. One Assistant is Compulsory. You Can Fill Multiple String Session Seperating With (,) comma",
-        "value": "",
+        "value": "BQE7EL8AmsMYKbI9lwsoUhjHivW3vPysOAjYvRblb8SMbS3OzFNvR1POlH6_iJvcm_XRt9ldXqudxBuzc0-d6TaaBmEALKJQBq3clmPg1yobPWQaZBwW7zXxjNySdFN7zuvcwBkHC3lj2LdkZxSWUO18shRpQlxs2a95Yo90Nlyel9Vdsv_2gb9pMQKqkOZWenWVAmaYT7OadEzdNZ_fgE_SEH_6g7Vn82Fn6VxXvkdM9hUYHIOHldhjVezqz-HyuVU8la2qmxXHZWHsOD9IaENHVE57U5xOeFytpgTDJ9OcDF39JLV2ZDB1FCRsfvq8e1aMN2h6w61NZSJJg0fUG6r7v6YvtQAAAAGk_yddAA",
         "required": true
       },
       "HEROKU_API_KEY": {
         "description": "Your Heroku account's API key",
-        "value": "",
+        "value": "HRKU-a48812e2-9ba6-47db-a2b3-f44f43925a87",
         "required": false
       },
       "HEROKU_APP_NAME": {
@@ -61,12 +61,12 @@
       },
       "LOG_GROUP_ID": {
         "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
-        "value": "",
+        "value": "loveislife7478",
         "required": true
       },
       "UPSTREAM_REPO": {
         "description": "If you dont know this, Leave as it is",
-        "value": "https://github.com/TheTeamVivek/YukkiMusic",
+        "value": "https://github.com/bffzone/A",
         "required": true
       },
       "UPSTREAM_BRANCH": {
