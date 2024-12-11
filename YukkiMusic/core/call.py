@@ -146,7 +146,11 @@ class Call:
                 video_parameters=video_stream_quality,
             )
         else:
-            stream = MediaStream(link, audio_parameters=audio_stream_quality)
+            stream = MediaStream(
+                link,
+                audio_parameters=audio_stream_quality,
+                video_flags=MediaStream.Flags.IGNORE,
+            )
 
         await assistant.play(chat_id, stream, config=call_config)
 
@@ -286,7 +290,7 @@ class Call:
             stream = MediaStream(
                 link,
                 audio_parameters=audio_stream_quality,
-#                video_flags=MediaStream.Flags.IGNORE to do
+                video_flags=MediaStream.Flags.IGNORE,
             )
 
         try:
@@ -391,6 +395,7 @@ class Call:
                         stream = MediaStream(
                             link,
                             audio_parameters=audio_stream_quality,
+                            video_flags=MediaStream.Flags.IGNORE,
                         )
                 try:
                     await client.play(chat_id, stream, config=call_config)
@@ -449,6 +454,7 @@ class Call:
                         stream = MediaStream(
                             file_path,
                             audio_parameters=audio_stream_quality,
+                            video_flags=MediaStream.Flags.IGNORE,
                         )
                 try:
                     await client.play(chat_id, stream, config=call_config)
@@ -481,7 +487,11 @@ class Call:
                         video_parameters=video_stream_quality,
                     )
                     if str(streamtype) == "video"
-                    else MediaStream(videoid, audio_parameters=audio_stream_quality)
+                    else MediaStream(
+                        videoid,
+                        audio_parameters=audio_stream_quality,
+                        video_flags=MediaStream.Flags.IGNORE,
+                    )
                 )
                 try:
                     await client.play(chat_id, stream, config=call_config)
@@ -533,6 +543,7 @@ class Call:
                         stream = MediaStream(
                             queued,
                             audio_parameters=audio_stream_quality,
+                            video_flags=MediaStream.Flags.IGNORE,
                         )
                 try:
                     await client.play(chat_id, stream, config=call_config)
